@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/assets/css/faq.css">
+</head>
+
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <div class="navlinks">
+            <a href="/index.html
+        ">HOME</a>
+            <a href="/assets/html/services.html">SERVICES</a>
+            <a href="/assets/html/about.html">ABOUT US</a>
+            <a href="/assets/html/reviews.html">REVIEWS</a>
+            <a href="/assets/html/gallery.html">GALLERY</a>
+            <a href="/assets/html/contact.html">CONTACT US</a>
+            <a href="/assets/html/faq.html">FAQ</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="faq">
+            <h2>What services do you offer?</h2>
+            <p>dvmj</p>
+        </div>
+
+        <div class="faq">
+            <h2>Will the trailer bar work at my venue?</h2>
+            <p>The Vintage Hitch is about 12 feet long and 6 feet wide. We can park in just about any space that a
+                vehicle can drive.</p>
+        </div>
+
+        <div class="faq">
+            <h2>What about decorations?</h2>
+            <p>We provide multiple options of included decor or have additional add on options. Leave all the signage
+                and decor to us, or bring your own.</p>
+        </div>
+
+        <div class="faq">
+            <h2>Who provides alcohol?</h2>
+            <p>ghuiohoipoiojou ,mnjipok.</p>
+        </div>
+
+        <div class="faq">
+            <h2>Can non alcoholic beverages be served?</h2>
+            <p>Yes, we specialize in creating tailor-made solutions to meet your specific business needs.</p>
+        </div>
+
+        <div class="faq">
+            <h2>What is your refund policy?</h2>
+            <p>Yes, we can work with you to create a specialty package such as mocktails (non-alcoholic cocktails), hot
+                chocolate, ice cream sundaes and more!</p>
+        </div>
+
+        <div class="faq">
+            <h2>Are there other options besides the trailer bar?</h2>
+            <p>There is the option of a stand alone bar only with bartending service included as well as our self serve
+                refrigerated tap trailer (Doris). Contact us for pricing and package options.</p>
+        </div>
+
+        <div class="faq">
+            <h2>What if my event has to cancel?</h2>
+            <p>We will work to reschedule if needed for a future date.</p>
+        </div>
+
+        <div class="faq">
+            <h2>Are we insured?</h2>
+            <p>Of course, contact us for additional information regarding specifics.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 <a style="text-decoration: none; color: burlywood; " href="">Metroweb</a>. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq h2').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('open');
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('visible');
+            });
+        });
+    </script 
+</body>
+</html>
