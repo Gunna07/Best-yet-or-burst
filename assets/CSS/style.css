@@ -1,0 +1,500 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Overpass+Mono:600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent),
+        url('/images/i3.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    padding: 15px 35px;
+    display: flex;
+    position: relative;
+}
+
+nav h2 {
+    margin-bottom: 0;
+    flex: 1;
+    letter-spacing: 3px;
+    font-family: 'Overpass Mono', monospace;
+}
+
+.navlinks a {
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+#logo {
+    color: lightgray;
+    text-transform: uppercase;
+    border-bottom: 2px solid lightgray;
+}
+
+
+
+.exit-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: lightgray;
+    font-size: 20px;
+}
+
+.center {
+    line-height: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.center h1 {
+
+    margin-bottom: 34px;
+
+    margin-top: 0;
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-transform: none;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 82px;
+    letter-spacing: .015em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+
+}
+
+
+
+
+
+
+section {
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #444444;
+}
+
+
+.unique-experience h1 {
+    margin-top: 0;
+    color: #000000;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-transform: none;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 82px;
+    letter-spacing: .015em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.unique-experience h3 {
+    text-align: center;
+    word-wrap: break-word;
+    font-family: poppins;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+.how-it-works h1 {
+    margin-bottom: 15px;
+
+    margin-top: 0;
+    color: #000000;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-transform: none;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 82px;
+    letter-spacing: .015em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.how-it-works h3 {
+    text-align: center;
+    word-wrap: break-word;
+    font-family: poppins;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+
+.bartending-service {
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('/images/bg10.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+.bartending-service .content {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bartending-service h1 {
+    margin-top: 0;
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-transform: none;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 82px;
+    letter-spacing: .015em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.bartending-service h3 {
+    text-align: center;
+    word-wrap: break-word;
+    font-family: poppins;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+
+
+.photo-gallery {
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.photo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo {
+    position: relative;
+    display: inline-block;
+}
+
+
+.alcohol {
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.alcohol h1 {
+    margin-bottom: 20px;
+
+    margin-top: 0;
+    color: #000000;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-transform: none;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 82px;
+    letter-spacing: .015em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.alcohol h3 {
+    text-align: center;
+    color: #444444;
+    word-wrap: break-word;
+    font-family: poppins;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+
+.drinks {
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('/images/bg5.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+.drinks .content {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.drinks h1 {
+    margin-bottom: 1rem;
+
+    margin-top: 0;
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-transform: none;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 82px;
+    letter-spacing: .015em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.drinks h3 {
+    text-align: center;
+    word-wrap: break-word;
+    font-family: poppins;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+.photo-gallery2 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.photo2 {
+    position: relative;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+
+/* Footer */
+footer {
+    margin: 0;
+    position: relative;
+    background: #2f2f2f;
+    color: lightgray;
+}
+
+footer button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+
+footer .copyright {
+    background: lightgray;
+    color: #969696;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 40%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 425px) {
+
+    header,
+    .bread-background,
+    .cake-background {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        position: initial;
+        padding: 20px 70px;
+        align-items: baseline;
+    }
+
+    @media (max-width: 768px) {
+        .bartending-service h1 {
+            font-size: 2rem;
+        }
+
+        .bartending-service p {
+            font-size: 1rem;
+        }
+
+        .gallery .images {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .gallery .images .image {
+            max-width: 100%;
+        }
+    }
+
+    .nav-button {
+        display: none;
+    }
+}

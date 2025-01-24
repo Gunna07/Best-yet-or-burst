@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <div class="navlinks">
+            <a href="/index.html
+                    ">HOME</a>
+            <a href="/assets/html/services.html">SERVICES</a>
+            <a href="/assets/html/about.html">ABOUT US</a>
+            <a href="/assets/html/reviews.html">REVIEWS</a>
+            <a href="/assets/html/gallery.html">GALLERY</a>
+            <a href="/assets/html/contact.html">CONTACT US</a>
+            <a href="/assets/html/faq.html">FAQ</a>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <!-- 20 images -->
+        <img src="/images/bg5.jpg" alt="Gallery Image 1">
+        <img src="/images/bg6.jpg" alt="Gallery Image 2">
+        <img src="/images/bg9.jpg" alt="Gallery Image 3">
+        <img src="/images/bg5.jpg" alt="Gallery Image 4">
+        <img src="/images/bg5.jpg" alt="Gallery Image 5">
+        <img src="/images/bg5.jpg" alt="Gallery Image 6">
+        <img src="/images/bg5.jpg" alt="Gallery Image 7">
+        <img src="/images/bg5.jpg" alt="Gallery Image 8">
+        <img src="/images/bg5.jpg" alt="Gallery Image 9">
+        <img src="/images/bg5.jpg" alt="Gallery Image 10">
+        <img src="/images/bg5.jpg" alt="Gallery Image 11">
+        <img src="/images/bg5.jpg" alt="Gallery Image 12">
+        <img src="/images/bg5.jpg" alt="Gallery Image 13">
+        <img src="/images/bg5.jpg" alt="Gallery Image 14">
+        <img src="/images/bg5.jpg" alt="Gallery Image 15">
+        <img src="/images/bg5.jpg" alt="Gallery Image 16">
+        <img src="/images/bg5.jpg" alt="Gallery Image 17">
+        <img src="/images/bg5.jpg" alt="Gallery Image 18">
+        <img src="/images/bg5.jpg" alt="Gallery Image 19">
+        <img src="/images/bg5.jpg" alt="Gallery Image 20">
+    </div>
+
+    <!-- Lightbox for Carousel -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <span class="prev">&#10094;</span>
+        <img src="" alt="">
+        <span class="next">&#10095;</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 <a style="text-decoration: none; color: rgb(129, 85, 56);" href="">METRO-WEB</a>. All Rights
+            Reserved.</p>
+    </footer>
+
+    <script>
+        const galleryImages = document.querySelectorAll('.gallery img');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const closeBtn = lightbox.querySelector('.close');
+        const prevBtn = lightbox.querySelector('.prev');
+        const nextBtn = lightbox.querySelector('.next');
+
+        let currentIndex = 0;
+
+        function showLightbox(index) {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = galleryImages[index].src;
+            currentIndex = index;
+        }
+
+        function hideLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentIndex].src;
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentIndex].src;
+        }
+
+        galleryImages.forEach((img, index) => {
+            img.addEventListener('click', () => showLightbox(index));
+        });
+
+        closeBtn.addEventListener('click', hideLightbox);
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+
+        // Ensure clicking lightbox background closes it
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) hideLightbox();
+        });
+    </script>
+</body>
+
+</html>
